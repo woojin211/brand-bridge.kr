@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BrandBridge | 브랜드브릿지</title>
+  <meta name="description" content="브랜드브릿지는 글로벌 브랜드 소싱과 한국 시장 독점 판권 취득을 전문으로 하는 수입·유통 파트너입니다." />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Noto Sans KR', sans-serif;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    header {
+      background: #ffffffcc;
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #0070f3;
+      text-decoration: none;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.2s;
+    }
+
+    nav a:hover {
+      color: #0070f3;
+    }
+
+    .hero {
+      position: relative;
+      background: url('https://source.unsplash.com/1600x900?global,logistics') center/cover no-repeat;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+    }
+
+    .hero-overlay {
+      background: rgba(0, 0, 0, 0.55);
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      text-align: center;
+      width: 100%;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn-primary {
+      background: #0070f3;
+      color: #fff;
+      padding: 1rem 2rem;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+
+    .btn-primary:hover {
+      background: #0051a8;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .services {
+      display: grid;
+      gap: 2rem;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 2rem;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      text-align: center;
+    }
+
+    .card h3 {
+      margin-bottom: 1rem;
+      color: #0070f3;
+    }
+
+    .workflow {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      justify-content: center;
+    }
+
+    .workflow-step {
+      flex: 1 0 200px;
+      text-align: center;
+    }
+
+    footer {
+      background: #f7f7f7;
+      padding: 2rem 0;
+    }
+
+    footer .footer-content {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #666;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2.2rem;
+      }
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <nav>
+        <a href="#" class="logo">BrandBridge</a>
+        <ul>
+          <li><a href="#about">회사 소개</a></li>
+          <li><a href="#services">서비스</a></li>
+          <li><a href="#process">프로세스</a></li>
+          <li><a href="#contact">문의</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <h1>글로벌 브랜드, 한국 시장으로의 완벽한 교량</h1>
+        <p>BrandBridge는 해외 브랜드의 한국 진출을 위한 <strong>소싱·판권·유통</strong> 솔루션을 제공합니다.</p>
+        <a href="#contact" class="btn-primary">파트너십 문의</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2 class="section-title">회사 소개</h2>
+        <p style="text-align: center;">
+          BrandBridge(브랜드브릿지)는 전 세계 유망 브랜드를 발굴하여 한국 시장에 독점적으로 소개하는 전문 파트너입니다. 철저한 시장 분석과 협상력을 바탕으로 브랜드 가치를 극대화하고 안정적인 공급망을 구축합니다.
+        </p>
+        <p style="text-align: center; margin-top: 1rem;">
+          BrandBridge is a trusted partner that discovers promising brands across the globe and introduces them exclusively to the Korean market. Leveraging rigorous market intelligence and strong negotiation capabilities, we maximize brand value while building reliable supply chains.
+        </p>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services">
+      <div class="container">
+        <h2 class="section-title">주요 서비스</h2>
+        <div class="services">
+          <div class="card">
+            <h3>글로벌 소싱</h3>
+            <p>세계 각지에서 검증된 브랜드를 발굴해 국내 소비자에게 새로운 가치를 제공합니다.</p>
+          </div>
+          <div class="card">
+            <h3>독점 판권 취득</h3>
+            <p>브랜드의 한국 내 독점 유통권을 확보하여 파트너에게 안정적인 시장 경쟁력을 제공합니다.</p>
+          </div>
+          <div class="card">
+            <h3>통합 유통 솔루션</h3>
+            <p>수입 통관부터 물류, 온·오프라인 채널 입점까지 전 과정을 원스톱으로 지원합니다.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process">
+      <div class="container">
+        <h2 class="section-title">업무 프로세스</h2>
+        <div class="workflow">
+          <div class="workflow-step">
+            <h3>01 연구 · 분석</h3>
+            <p>시장 동향과 소비자 인사이트를 기반으로 브랜드 포지셔닝을 정의합니다.</p>
+          </div>
+          <div class="workflow-step">
+            <h3>02 파트너십 제안</h3>
+            <p>해외 브랜드와 협상하여 상호 윈윈 구조의 계약을 체결합니다.</p>
+          </div>
+          <div class="workflow-step">
+            <h3>03 물류 · 통관</h3>
+            <p>전담 물류 네트
