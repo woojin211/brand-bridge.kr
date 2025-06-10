@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Process | BrandBridge</title>
+  <title>Services | BrandBridge</title>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;700&display=swap" rel="stylesheet" />
   <style>
     *{margin:0;padding:0;box-sizing:border-box;}
@@ -19,10 +19,10 @@
     main{padding:4rem 0;}
     h1{font-size:2.5rem;text-align:center;margin-bottom:2rem;}
     h1 span{display:block;font-size:1.2rem;font-weight:400;color:#555;margin-top:.25rem;}
-    .workflow{display:flex;flex-wrap:wrap;gap:2rem;justify-content:center;margin-top:2rem;}
-    .workflow-step{flex:1 0 220px;text-align:center;background:#fff;border-radius:8px;padding:2rem;box-shadow:0 2px 8px rgba(0,0,0,.05);}
-    .workflow-step h3{margin-bottom:1rem;color:#0070f3;}
-    .workflow-step h3 span{display:block;font-size:1rem;font-weight:400;color:#333;margin-top:.25rem;}
+    .services{display:grid;gap:2rem;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));margin-top:2rem;}
+    .card{background:#fff;border-radius:8px;padding:2rem;box-shadow:0 2px 8px rgba(0,0,0,.05);text-align:center;}
+    .card h3{margin-bottom:1rem;color:#0070f3;}
+    .card h3 span{display:block;font-size:1rem;font-weight:400;color:#333;margin-top:.25rem;}
     footer{background:#f7f7f7;padding:2rem 0;margin-top:4rem;}
     footer .footer-content{text-align:center;font-size:.9rem;color:#666;}
   </style>
@@ -43,27 +43,22 @@
   </header>
 
   <main>
-    <h1>업무 Process <span>Our Process</span></h1>
-    <div class="container workflow">
-      <div class="workflow-step">
-        <h3>01 연구 · 분석 <span>Research & Analysis</span></h3>
-        <p>시장 동향과 소비자 인사이트를 기반으로 브랜드 포지셔닝을 정의합니다.<br>
-        <em>We define brand positioning based on market trends and consumer insights.</em></p>
+    <h1>주요 Services <span>Our Services</span></h1>
+    <div class="container services">
+      <div class="card">
+        <h3>글로벌 소싱 <span>Global Sourcing</span></h3>
+        <p>세계 각지에서 검증된 브랜드를 발굴해 국내 소비자에게 새로운 가치를 제공합니다.<br>
+        <em>We scout vetted brands worldwide to bring fresh value propositions to Korean consumers.</em></p>
       </div>
-      <div class="workflow-step">
-        <h3>02 파트너십 제안 <span>Partnership Proposal</span></h3>
-        <p>해외 브랜드와 협상하여 상호 윈윈 구조의 계약을 체결합니다.<br>
-        <em>We negotiate win‑win agreements with global brands.</em></p>
+      <div class="card">
+        <h3>독점 판권 취득 <span>Exclusive Licensing</span></h3>
+        <p>브랜드의 한국 내 독점 유통권을 확보하여 파트너에게 안정적인 시장 경쟁력을 제공합니다.<br>
+        <em>We secure exclusive distribution rights in Korea, giving partners a solid competitive edge.</em></p>
       </div>
-      <div class="workflow-step">
-        <h3>03 물류 · 통관 <span>Logistics & Customs</span></h3>
-        <p>전담 물류 네트워크를 통해 빠르고 안전하게 제품을 국내 반입합니다.<br>
-        <em>Our dedicated logistics network ensures fast, secure import.</em></p>
-      </div>
-      <div class="workflow-step">
-        <h3>04 마케팅 · 판매 <span>Marketing & Sales</span></h3>
-        <p>온·오프라인 채널에서 브랜드 스토리를 전달하여 판매를 극대화합니다.<br>
-        <em>We tell your brand story across channels to maximize sales.</em></p>
+      <div class="card">
+        <h3>통합 유통 솔루션 <span>Integrated Distribution</span></h3>
+        <p>수입 통관부터 물류, 온·오프라인 채널 입점까지 전 과정을 원스톱으로 지원합니다.<br>
+        <em>From customs clearance to logistics and omnichannel placement, we provide a seamless one‑stop service.</em></p>
       </div>
     </div>
   </main>
